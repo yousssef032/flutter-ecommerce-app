@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "34696971954",
+    "project_id": "ecom-learn-app",
+    "storage_bucket": "ecom-learn-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:34696971954:android:94337fbd806bbd90f16bab",
+        "android_client_info": {
+          "package_name": "com.example.e_commerce_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCq8H3RDpC_EBYQr8UvfIdKDAhtCMm6he8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
