@@ -33,6 +33,10 @@ migrate_working_dir/
 .pub/
 /build/
 
+# Flutter build cache and kernel files
+*.dill
+kernel_blob.bin
+
 # Symbolication related
 app.*.symbols
 
