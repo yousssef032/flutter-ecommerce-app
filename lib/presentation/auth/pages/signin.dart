@@ -6,8 +6,11 @@ import 'package:e_commerce_app/presentation/auth/pages/signup.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
+import '../../../data/auth/models/user_signin_req.dart';
+
 class SigninPage extends StatelessWidget {
-  const SigninPage({super.key});
+  SigninPage({super.key});
+  final TextEditingController _emailCon = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -50,6 +53,7 @@ class SigninPage extends StatelessWidget {
 
   Widget _emailField(BuildContext context) {
     return TextField(
+      controller: _emailCon,
       decoration: InputDecoration(
         hintText: "Enter Email",
         border: OutlineInputBorder(),
@@ -63,7 +67,9 @@ class SigninPage extends StatelessWidget {
         onPressed: () {
           AppNavigator.push(
             context,
-            const EnterPasswordPage(),
+            EnterPasswordPage(
+              signinReq: UserSigninReq(email: _emailCon.text),
+            ),
           );
         },
         title: 'Continue');
